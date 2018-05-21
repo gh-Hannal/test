@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fyt.musicplayer.MainActivity">
+
+    <!--显示播放进度-->
+
+    <SeekBar
+        android:id="@+id/sb"
+        android:layout_width="match_parent"
+        android:layout_height="59dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp" >
+
+        <!--显示当前进度-->
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00" />
+
+        <!--显示总进度-->
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="00:00"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_total"
+            android:layout_marginLeft="96dp"
+            android:layout_marginStart="96dp"
+            android:layout_toEndOf="@+id/tv_progress"
+            android:layout_toRightOf="@+id/tv_progress"
+            android:text="there for you.mp3" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="continuePlay"
+        android:background="#E1FFFF"
+        android:text="继续播放" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="play"
+        android:background="#ffffff"
+        android:text="播放音乐" />
+
+    <Button
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:onClick="pausePlay"
+        android:background="#E1FFFF"
+        android:text="暂停播放" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="exit"
+        android:background="#ffffff"
+        android:text="退出" />
+
+
+</LinearLayout>
