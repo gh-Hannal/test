@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btn_clear"
+        android:icon="@drawable/ic_delete"
+        android:title="清除"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btn_save"
+        android:icon="@drawable/ic_save"
+        android:title="保存"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btn_logout"
+        android:icon="?attr/actionModeCloseDrawable"
+        android:title="返回"
+        app:showAsAction="always" />
+</menu>

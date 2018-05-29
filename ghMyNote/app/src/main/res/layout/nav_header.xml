@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="50dp"
+    android:padding="10dp">
+    <!--android:background="?attr/colorPrimary"-->
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="174dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:visibility="visible" />
+    <ImageButton
+        android:id="@+id/btn_list_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/btn_list_delete"
+        android:src="@drawable/ic_add"/>
+        <!--android:background="?attr/colorPrimary"-->
+    <ImageButton
+        android:id="@+id/btn_list_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_delete"/>
+        // android:background="?attr/colorPrimary"
+</RelativeLayout>
